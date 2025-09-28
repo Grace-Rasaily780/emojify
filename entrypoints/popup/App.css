@@ -1,4 +1,4 @@
-#root {
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -14,4 +14,91 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}*/
+
+
+
+
+.container {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  width: 250px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #3a3a3a;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d1d5db;
+  margin-bottom: 8px;
+}
+
+.field select {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #3a3a3a;
+  border: 1px solid #4a4a4a;
+  border-radius: 6px;
+  color: #e5e7eb;
+  font-size: 16px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23e5e7eb' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.field select:focus {
+  outline: none;
+  border-color: #6366f1;
+  background-color: #404040;
+}
+
+.field select option {
+  background-color: #2a2a2a;
+  color: #e5e7eb;
+}
+
+.field span {
+  display: block;
+  font-size: 16px;
+  color: #e5e7eb;
+  background-color: #3a3a3a;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #4a4a4a;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6366f1;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #7879f1;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
 }
