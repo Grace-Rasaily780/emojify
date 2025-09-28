@@ -1,8 +1,8 @@
 import { useState } from "react";
+import { convert } from "./conversion";
 import './App.css';
 
 function App() {
-  const [mode, setMode] = useState<"noob" | "smiley" | "nerd" | "beast">("noob");
   const [title, setTitle] = useState<string>("");
 
   useEffect(() => {
@@ -11,21 +11,17 @@ function App() {
       setTitle(tab.title);
     }
     getId();
+    
+    const convertToEmoji = async () => {
+      const data = await convert("Good morning! I hope you are feeling happy today. The sun is shining bright, and it’s a perfect day to enjoy some pizza or ice cream with friends. Don’t forget to smile and take a break if you feel tired. Remember, every little joy counts in life!");
+      console.log(data);
+    }
+
+    convertToEmoji();
   }, [])
 
   return (
     <div className="container">
-      <div className="field">
-        <label>Mode</label>
-        <select name="mode" id="mode" onChange={(e) => {setMode(e.target.value);}}
-        >
-          <option value="noob">Noob</option>
-          <option value="smiley">Smiley</option>
-          <option value="nerd">Nerd</option>
-          <option value="beast">Beast</option>
-        </select>
-      </div>
-
       <div className="field">
         <label>Webpage</label>
         <span>{title}</span>
