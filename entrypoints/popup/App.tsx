@@ -11,9 +11,9 @@ function App() {
       setTitle(tab.title);
     }
     getId();
-    
+
     const convertToEmoji = async () => {
-      const data = await convert("Good morning! I hope you are feeling happy today. The sun is shining bright, and it’s a perfect day to enjoy some pizza or ice cream with friends. Don’t forget to smile and take a break if you feel tired. Remember, every little joy counts in life!");
+      const data = await convert("Nepal,[a] officially the Federal Democratic Republic of Nepal,[b] is a landlocked country in South Asia. It is mainly situated in the Himalayas, but also includes parts of the Indo-Gangetic Plain. It borders the Tibet Autonomous Region of China to the north, and India to the south, east, and west, while it is narrowly separated from Bangladesh by the Siliguri Corridor, and from Bhutan by the Indian state of Sikkim. Nepal has a diverse geography, including fertile plains, subalpine forested hills, and eight of the world's ten highest mountains, including Mount Everest, the highest point above mean sea level on Earth.[16] Kathmandu is the nation's capital and its largest city. Nepal is a multi-ethnic, multi-lingual, multi-religious, and multi-cultural state, with Nepali as the official language.");
       console.log(data);
     }
 
